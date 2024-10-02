@@ -1,24 +1,38 @@
 <!doctype html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<title>Blog mock</title>
 	</head>
+
 	<body>
-		<div class="header">
-			<div class="navbar">
-				<a href="index.html">writings.dev</a>
-				<a href="#categories">Categories</a>
-				<a href="#articles">Articles</a>
-				<a href="#about">About</a>
+
+		<header>
+			<div class="top-header">
+				<a href="index.html" class="brand">writings.dev</a>
+				<div class ="navbar">
+					<a href="#categories" class="n">Categories</a>
+					<a href="#articles">Articles</a>
+					<a href="#about">About</a>
+				</div>
 			</div>
-			<img src="images/logo.png" alt="logo">
-			<h1>Writings for developers</h1>	
-			<p>Curated collection of articles for busy developers</p>
-		</div>
-		<categories id="categories">
+
+			<div class="logo">
+				<img src="images/logo.png" alt="logo">
+			</div>
+			
+			<div class="logo-text">
+				<h1>Writings for developers</h1>	
+				<p>Curated collection of articles for busy developers</p>
+			</div>
+		</header>
+		
+		<hr>
+
+		<div id="categories">
 			<button type="button">grid</button>
 			<button type="button">list</button>
 			<button type="button">JavaScript</button>
@@ -27,8 +41,8 @@
 			<button type="button">Terraform</button>
 			<button type="button">Architecture</button>
 			<button type="button">Scalability</button>
-		</categories>
-		<articles id="articles">
+		</div>
+		<div id="articles">
 			<div class="article">
 				<img src="images/image1.jpg" alt="img">
 				<h2>Article 1</h2>
@@ -49,11 +63,11 @@
 				<h2>Article 4</h2>
 				<p>Description</p>
 			</div>
-		</articles>
-		<about id="about">
+		</div>
+		<div id="about">
 			<a href="index.html">writings.dev</a>
 			<p>by @cytrynka</p>
 			<a href="https://x.com/" target="blank">Follow on twitter</a>
-		</about>
+		</div>
 	</body>
 </html>

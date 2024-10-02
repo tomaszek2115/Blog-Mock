@@ -1,18 +1,53 @@
 body {
     background-color: #232830;
+    font-family: 'Roboto';
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-h1 {
-    color: white;
+.top-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 3%;
 }
 
-.home-link {
+.brand {
+    text-align: left;
     color: white;
+    font-size: 30px;
     text-decoration: none;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
-    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.logo-text {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.logo-text h1 {
+    font-size: 80px;
+    color: lightcoral;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.logo-text p {
+    font-size: 30px;
+    color: white;
 }
